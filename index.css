@@ -1,0 +1,187 @@
+*{
+    font-family: sans-serif;
+}
+.nav-bar{
+    width: 99%;
+    height: 50px;
+    background-color: rgb(100, 100, 255);
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    border-bottom: solid;
+}
+
+nav {
+    width: 99%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;  
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+}
+
+a:hover{
+    background-color: white;
+}
+
+.hero {
+    margin-top: 50px;
+    position: relative;
+
+}
+
+#hero-image {
+    height: auto;
+    max-height: 500px;
+
+}
+
+.hero-text-background {
+    background: linear-gradient(to bottom left, transparent, black);
+    position: absolute;
+    top: 0%;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+}
+
+.hero-text {
+    position: absolute;
+    text-align:left;
+    top: 70%;
+    left: 10%;
+    color: white;
+    font-size: 15px;
+}
+
+#template{
+    font-size: 25px;
+    width: 50%;
+    height: 500px;
+    align-content: center;
+}
+
+figcaption{
+    color: black;
+    z-index: 99;
+    font-size: 15px;
+}
+
+.image-figure {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.image {
+    width: 90%;
+    height: 90%;
+    max-height: 400px;
+    border-radius: 5%;
+}
+
+h1, p{
+    position: relative;
+    left: 20px;
+}
+
+.aside-major-cities {
+    float: right;
+}
+
+.section-major-cities {
+    position: relative;
+}
+
+#major-cities-image {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 90%;
+    height: 90%;
+    border-radius: 5%;
+}
+
+.overview{
+    background-color: lightgrey;
+}
+
+.section-overview{
+    position: relative;
+}
+
+#overview-image{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 90%;
+    height: 90%;
+    border-radius: 5%;
+}
+
+.aside-overview{
+    float: left;
+}
+
+.aside-tourism{
+    float: right;
+}
+
+.aside-tourism p{
+    font-size: 15px;
+}
+
+table, th, td{
+    border: solid;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.section-tourism{
+    position: relative;
+}
+
+#tourism-image{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    width: 90%;
+    height: 90%;
+    border-radius: 5%;
+}
+
+footer {
+    display: block;
+    width: auto;
+    height: 200px;
+    background-color: gray;
+    border-top: solid;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: 30px;
+}
+
+.footer-page-links{
+    display: flex;
+    flex-direction: column;
+}
