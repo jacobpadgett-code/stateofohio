@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The State of Ohio - Contact Us</title>
+        <link rel="stylesheet" href="ContactUs.css">
+        <script src="ContactUs.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="nav-bar">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="Columbus.html">Columbus</a>
+                    <a href="Cleveland.html">Cleveland</a>
+                    <a href="Cincinnati.html">Cincinnati</a>
+                    <a href="ContactUs.html">Contact Us</a>
+                </nav>
+            </div>
+            <script>
+                function compareValues(theForm){
+                    if (theForm.email.value != theForm.confirm-email.value){
+                        alert("Your emails do not match.")
+                        return false;
+                    }
+                    else {
+                        return true;
+                    }
+                }
+            </script>
+            <form id="theForm" onsubmit="compareValues(theForm)">
+                <fieldset>
+                    <h3>For Questions<br> Please Fill Out the Following Information</h3>
+                    <p><label for="first-name">First Name:<br>
+                        <input id="first-name" name="first-name" type="text" placeholder="Enter Your First Name Here" required />
+                    </label></p>
+                    <p><label for="last-name">Last Name:<br>
+                        <input id="last-name" name="last-name" type="text" placeholder="Enter Your Last Name Here" required />
+                    </label></p>
+                    <p><label for="email">Email:<br>
+                        <input id="email" name="email" type="email" placeholder="Enter Your Email Here" required />
+                    </label></p>
+                    <p><label for="confirm-email">Confirm Email:<br>
+                        <input id="confirm-email" name="confirm-email" type="email" placeholder="Re-enter Your Email Here" required />
+                    </label></p>
+                    <p><label for="question">Question:<br>
+                        <textarea id="question" name="question" rows="10" cols="72" placeholder="Enter Your Question Here" required></textarea>
+                    </label></p>
+                    <input type="submit">
+                </fieldset>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-page-links">
+                <h3>Page Links</h3>
+                <a href="index.html">Home</a>
+                <a href="Columbus.html">Columbus</a>
+                <a href="Cleveland.html">Cleveland</a>
+                <a href="Cincinnati.html">Cincinnati</a>
+                <a href="ContactUs.html">Contact Us</a>
+            </div>
+            <div class="footer-external-links">
+                <h3>For More Information</h3>
+                <a href="https://ohio.org" target="_blank">Click Here</a>
+            </div>
+        </div>
+    </footer>
+</html>
